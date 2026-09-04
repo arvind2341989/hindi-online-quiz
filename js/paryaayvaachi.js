@@ -11,7 +11,7 @@ const quizQuestions = [
     {
         id: 1,
         type: "multiple",
-        question: "शब्द के सही पर्यायवाची शब्दों को चुनिए।",
+        question: "सुरभि शब्द के दो सही पर्यायवाची शब्दों को चुनिए।",
         options: [
             "सुगंध",
             "खुशबू",
