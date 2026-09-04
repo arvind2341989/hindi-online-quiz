@@ -10,15 +10,15 @@
 const quizQuestions = [
     {
         id: 1,
-        type: "single",
-        question: "Which keyword is used to create a subclass in Java?",
+        type: "multiple",
+        question: "शब्द के सही पर्यायवाची शब्दों को चुनिए।",
         options: [
-            "implements",
-            "extends",
-            "inherits",
-            "super"
+            "सुगंध",
+            "खुशबू",
+            "हर्ष",
+            "उल्लास"
         ],
-        correctAnswers: [1],
+        correctAnswers: [0, 1],
         explanation:
             "A class uses the extends keyword to inherit from another class. The implements keyword is used when a class implements an interface."
     },
