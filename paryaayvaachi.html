@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive online quiz website for GitHub Pages">
+    <title>पर्यायवाची</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <div>
+                <p class="eyebrow">Learning Assessment</p>
+                <h1>पर्यायवाची</h1>
+                <p class="subtitle">Single-answer and multiple-answer questions with explanations.</p>
+            </div>
+            <button id="restartTopBtn" class="btn btn-secondary" type="button">Restart Quiz</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="startScreen" class="card start-card">
+            <h2>Java Fundamentals Quiz</h2>
+            <p>
+                This sample quiz demonstrates both single-choice and multiple-choice questions.
+                Select your answer, submit it, and review the explanation.
+            </p>
+
+            <div class="quiz-summary">
+                <div>
+                    <span id="questionCount" class="summary-number">0</span>
+                    <span class="summary-label">Questions</span>
+                </div>
+                <div>
+                    <span class="summary-number">2</span>
+                    <span class="summary-label">Question Types</span>
+                </div>
+                <div>
+                    <span class="summary-number">100%</span>
+                    <span class="summary-label">Client-side</span>
+                </div>
+            </div>
+
+            <button id="startBtn" class="btn btn-primary btn-large" type="button">Start Quiz</button>
+        </section>
+
+        <section id="quizScreen" class="hidden">
+            <div class="quiz-toolbar card">
+                <div>
+                    <span id="progressText">Question 1 of 1</span>
+                    <div class="progress-track" aria-hidden="true">
+                        <div id="progressBar" class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="score-pill">
+                    Score: <strong id="liveScore">0</strong>
+                </div>
+            </div>
+
+            <article class="card question-card">
+                <div class="question-meta">
+                    <span id="questionTypeBadge" class="badge"></span>
+                    <span id="questionNumber"></span>
+                </div>
+
+                <h2 id="questionText"></h2>
+                <p id="selectionHint" class="selection-hint"></p>
+
+                <form id="answerForm">
+                    <div id="optionsContainer" class="options"></div>
+
+                    <div class="actions">
+                        <button id="submitBtn" class="btn btn-primary" type="submit">Submit Answer</button>
+                        <button id="nextBtn" class="btn btn-primary hidden" type="button">Next Question</button>
+                    </div>
+                </form>
+
+                <div id="feedbackBox" class="feedback hidden" role="status" aria-live="polite">
+                    <h3 id="feedbackTitle"></h3>
+                    <p id="correctAnswerText"></p>
+                    <div class="explanation">
+                        <strong>Explanation</strong>
+                        <p id="explanationText"></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="resultScreen" class="card result-card hidden">
+            <p class="eyebrow">Quiz Complete</p>
+            <h2>Your Result</h2>
+
+            <div id="resultCircle" class="result-circle">
+                <span id="percentageScore">0%</span>
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <div class="result-stats">
+                <div>
+                    <span id="finalScore" class="summary-number">0</span>
+                    <span class="summary-label">Correct</span>
+                </div>
+                <div>
+                    <span id="incorrectCount" class="summary-number">0</span>
+                    <span class="summary-label">Incorrect</span>
+                </div>
+                <div>
+                    <span id="totalQuestions" class="summary-number">0</span>
+                    <span class="summary-label">Total</span>
+                </div>
+            </div>
+
+            <button id="restartBtn" class="btn btn-primary btn-large" type="button">Try Again</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Static HTML, CSS and JavaScript — ready for GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script src="js/paryaayvaachi.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
